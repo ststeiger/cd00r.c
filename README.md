@@ -1,8 +1,4 @@
 
-http://www.phenoelit.org/stuff/cd00r.c
-https://www.pcworld.com/article/2857472/the-turla-espionage-operation-also-infected-linux-systems-with-malware.html
-
-
 The Turla Linux malware is based on an open-source backdoor program called cd00r developed in 2000. 
 It allows attackers to execute arbitrary commands on a compromised system, 
 but doesn’t require elevated privileges or root access to function 
@@ -20,7 +16,8 @@ Probing 1000 IP's to see if anyone has installed this and is using the default P
 # nmap -v -sS -T Polite -p 200,80,22,53,3 -iR 1000 
 ```
 
-
+Original source:
+http://www.phenoelit.org/stuff/cd00r.c
 
 
 #1. Introduction 
