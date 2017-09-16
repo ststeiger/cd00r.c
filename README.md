@@ -1,3 +1,20 @@
+
+https://www.neowin.net/forum/topic/1239352-cd00rc-the-best-backdoor-i-have-seen/
+https://www.pcworld.com/article/2857472/the-turla-espionage-operation-also-infected-linux-systems-with-malware.html
+
+The Turla Linux malware is based on an open-source backdoor program called cd00r developed in 2000. 
+It allows attackers to execute arbitrary commands on a compromised system, 
+but doesn’t require elevated privileges or root access to function 
+and listens to commands received via hidden TCP/UDP packets, 
+making it stealthy. It can’t be discovered via netstat.
+
+This backdoor will not listen on any port until you send a sequence of TCP SYN packets 
+on a defined port list, and in the correct order. Once the correct list of SYN packet 
+is received by the compromised host, a shell will spawn on a (hard-coded) TCP port, 
+and will wait for you. Brilliant !
+
+
+
 #1. Introduction 
 Standard backdoors and remote access services have one major drawback: The port’s they are listening on are visible on the system console as well as from outside (through port scanning).
  
